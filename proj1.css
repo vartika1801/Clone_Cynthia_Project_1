@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* The total height of a device is 100vh */
+/* The entire website is contained within the main div */
+/* The main div is further divided into sections */
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 300ms;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+}
+#main{
+    width: 100%;
+    /* height: auto;  */
+    background-color: black;
+    /* no lines at the intersection of divs are visible */
+}
+/* The landing page is generally home */
+ #home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+ }
+ #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+ }
+ #nav a{
+       color: #fff;
+       /* To remove underline we use text-decoration */
+       text-decoration: none;
+       font-size: 18px;
+ }
+ #heading{
+    margin-top: 90px;
+ }
+ #heading h1{
+    /* font-family: "General Sans Medium"; */
+    line-height: 1;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 560;
+    opacity: .6;
+    margin-left: 30px;
+
+ }
+ #heading #secondh1{
+    margin-left: 230px;
+ }
+ .blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;  
+ }
+ .blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+ }
+ /* If the position is absolute the element stays at the 
+ same place even if the screen size is changed */
+ #cheadings{
+    margin-top: 100px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+ }
+ #cheadings h5{
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: .65vw;
+    font-size: 1.25vw;
+    font-weight: 480;
+ }
+ #herofooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+ }
+ #herofooter a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+ }
+ #herofooter #iconset{
+    display: flex;
+    gap: 5px;
+ }
+
+ #herofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #888;
+    border-radius: 50%;
+ }
+ #second{
+    padding-right: 10vw;
+    padding-left: 2vw; 
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding-top: 150px;
+    color: #fff;
+ }
+ .elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #888;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    overflow: visible;
+
+ }
+ .elem h1{
+    text-transform: uppercase;
+    font-size: 8.2vw;
+    opacity: .7;
+    font-weight: 500;
+ }
+ .elemlast{
+    border-bottom: 1px solid #888;
+ }
+ .elem h5{
+    font-weight: normal;
+ }
+ .elem img{
+    position: absolute;
+    /* display: none; */
+    opacity: 0; 
+    z-index: 999;
+    /* 999 is the index value */
+    height: 140%;
+    /* transition: opacity 0.3s ease; */
+     
+ }
+ #about{
+    display: flex;
+    align-items: center;
+    /* justify-content: space space-between; */
+    color: #fff;
+    width: 100%;
+    background-color: black;
+    padding: 19vw 1vw;
+    padding-left: 43.8vw;
+    gap: 50px;
+ }
+ /* #imageabout{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-image: url(./cynthia.png);
+    background-size: cover;
+ } */
+#about img{
+    width: 200px;
+}
+#textabout{
+    width: 25rem;
+} 
+#textabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+#textabout p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+#textabout a{
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+#subscribe{
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    padding-bottom: 10vw;
+}
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#footer{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+#footerleft{
+    display: flex;
+    gap: 20px;
+}
+#footerright{
+    display: flex;
+    gap: 45px;
+}
+#footer a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+    /* if the content moves out of the dimesnion
+    it wont be visible beyond the dimension */
+    background-color: black;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+@media (max-width:480px) and (min-width: 350px){
+   #heading h1{
+      margin-left: 30px !important;
+      color: red;
+   }
+}
